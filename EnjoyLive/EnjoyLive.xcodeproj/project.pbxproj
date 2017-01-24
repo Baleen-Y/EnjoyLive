@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B1FBD731E372791007A5081 /* ELConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FBD721E372791007A5081 /* ELConst.swift */; };
+		4B1FBD751E374182007A5081 /* ELLiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FBD741E374182007A5081 /* ELLiveVC.swift */; };
+		4B1FBD771E3741F1007A5081 /* ELMineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FBD761E3741F1007A5081 /* ELMineVC.swift */; };
+		4B1FBD7C1E37473B007A5081 /* ELChildVCItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FBD7B1E37473B007A5081 /* ELChildVCItem.swift */; };
+		4B1FBD7E1E375AC5007A5081 /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FBD7D1E375AC5007A5081 /* UIBarButtonItemExtension.swift */; };
+		4B1FBD801E37A524007A5081 /* ELLiveListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FBD7F1E37A524007A5081 /* ELLiveListTVC.swift */; };
+		4B1FBD831E37A5BE007A5081 /* ELLiveListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FBD811E37A5BE007A5081 /* ELLiveListCell.swift */; };
+		4B1FBD841E37A5BE007A5081 /* ELLiveListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1FBD821E37A5BE007A5081 /* ELLiveListCell.xib */; };
+		4BC48D5D1E360C7F00837EF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC48D5C1E360C7F00837EF5 /* AppDelegate.swift */; };
+		4BC48D641E360C7F00837EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC48D631E360C7F00837EF5 /* Assets.xcassets */; };
+		4BC48D671E360C7F00837EF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC48D651E360C7F00837EF5 /* LaunchScreen.storyboard */; };
+		4BC48D721E360C8000837EF5 /* EnjoyLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC48D711E360C8000837EF5 /* EnjoyLiveTests.swift */; };
+		4BC48D7D1E360C8000837EF5 /* EnjoyLiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC48D7C1E360C8000837EF5 /* EnjoyLiveUITests.swift */; };
+		4BC48DA41E3662CB00837EF5 /* ELChoseRootVCTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC48DA31E3662CB00837EF5 /* ELChoseRootVCTool.swift */; };
+		4BC48DA61E36643100837EF5 /* ELFeatureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC48DA51E36643100837EF5 /* ELFeatureVC.swift */; };
+		4BC48DA81E36654600837EF5 /* ELFeaturePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC48DA71E36654600837EF5 /* ELFeaturePageView.swift */; };
+		4BC48DAA1E36753D00837EF5 /* ELTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC48DA91E36753D00837EF5 /* ELTabBarVC.swift */; };
+		4BC48DAC1E36755C00837EF5 /* ELNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC48DAB1E36755C00837EF5 /* ELNavigationVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BC48D6E1E360C8000837EF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BC48D511E360C7F00837EF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BC48D581E360C7F00837EF5;
+			remoteInfo = EnjoyLive;
+		};
+		4BC48D791E360C8000837EF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BC48D511E360C7F00837EF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BC48D581E360C7F00837EF5;
+			remoteInfo = EnjoyLive;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B1FBD721E372791007A5081 /* ELConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELConst.swift; sourceTree = "<group>"; };
+		4B1FBD741E374182007A5081 /* ELLiveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLiveVC.swift; sourceTree = "<group>"; };
+		4B1FBD761E3741F1007A5081 /* ELMineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMineVC.swift; sourceTree = "<group>"; };
+		4B1FBD7B1E37473B007A5081 /* ELChildVCItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELChildVCItem.swift; sourceTree = "<group>"; };
+		4B1FBD7D1E375AC5007A5081 /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
+		4B1FBD7F1E37A524007A5081 /* ELLiveListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLiveListTVC.swift; sourceTree = "<group>"; };
+		4B1FBD811E37A5BE007A5081 /* ELLiveListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLiveListCell.swift; sourceTree = "<group>"; };
+		4B1FBD821E37A5BE007A5081 /* ELLiveListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELLiveListCell.xib; sourceTree = "<group>"; };
+		4BC48D591E360C7F00837EF5 /* EnjoyLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnjoyLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BC48D5C1E360C7F00837EF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BC48D631E360C7F00837EF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BC48D661E360C7F00837EF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BC48D681E360C7F00837EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BC48D6D1E360C8000837EF5 /* EnjoyLiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnjoyLiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BC48D711E360C8000837EF5 /* EnjoyLiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyLiveTests.swift; sourceTree = "<group>"; };
+		4BC48D731E360C8000837EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BC48D781E360C8000837EF5 /* EnjoyLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnjoyLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BC48D7C1E360C8000837EF5 /* EnjoyLiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyLiveUITests.swift; sourceTree = "<group>"; };
+		4BC48D7E1E360C8000837EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BC48DA31E3662CB00837EF5 /* ELChoseRootVCTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELChoseRootVCTool.swift; sourceTree = "<group>"; };
+		4BC48DA51E36643100837EF5 /* ELFeatureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELFeatureVC.swift; sourceTree = "<group>"; };
+		4BC48DA71E36654600837EF5 /* ELFeaturePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELFeaturePageView.swift; sourceTree = "<group>"; };
+		4BC48DA91E36753D00837EF5 /* ELTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELTabBarVC.swift; sourceTree = "<group>"; };
+		4BC48DAB1E36755C00837EF5 /* ELNavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELNavigationVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BC48D561E360C7F00837EF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC48D6A1E360C8000837EF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC48D751E360C8000837EF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B1FBD781E374445007A5081 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		4BC48D501E360C7F00837EF5 = {
+			isa = PBXGroup;
+			children = (
+				4BC48D5B1E360C7F00837EF5 /* EnjoyLive */,
+				4BC48D701E360C8000837EF5 /* EnjoyLiveTests */,
+				4BC48D7B1E360C8000837EF5 /* EnjoyLiveUITests */,
+				4BC48D5A1E360C7F00837EF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BC48D5A1E360C7F00837EF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BC48D591E360C7F00837EF5 /* EnjoyLive.app */,
+				4BC48D6D1E360C8000837EF5 /* EnjoyLiveTests.xctest */,
+				4BC48D781E360C8000837EF5 /* EnjoyLiveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BC48D5B1E360C7F00837EF5 /* EnjoyLive */ = {
+			isa = PBXGroup;
+			children = (
+				4BC48D8A1E365DE500837EF5 /* Classes */,
+				4B1FBD781E374445007A5081 /* Resource */,
+				4BC48D5C1E360C7F00837EF5 /* AppDelegate.swift */,
+				4BC48D631E360C7F00837EF5 /* Assets.xcassets */,
+				4BC48D651E360C7F00837EF5 /* LaunchScreen.storyboard */,
+				4BC48D681E360C7F00837EF5 /* Info.plist */,
+			);
+			path = EnjoyLive;
+			sourceTree = "<group>";
+		};
+		4BC48D701E360C8000837EF5 /* EnjoyLiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BC48D711E360C8000837EF5 /* EnjoyLiveTests.swift */,
+				4BC48D731E360C8000837EF5 /* Info.plist */,
+			);
+			path = EnjoyLiveTests;
+			sourceTree = "<group>";
+		};
+		4BC48D7B1E360C8000837EF5 /* EnjoyLiveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4BC48D7C1E360C8000837EF5 /* EnjoyLiveUITests.swift */,
+				4BC48D7E1E360C8000837EF5 /* Info.plist */,
+			);
+			path = EnjoyLiveUITests;
+			sourceTree = "<group>";
+		};
+		4BC48D8A1E365DE500837EF5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4BC48D8F1E365DE500837EF5 /* Feature */,
+				4BC48D8B1E365DE500837EF5 /* Base */,
+				4BC48D931E365DE500837EF5 /* Live */,
+				4BC48D9F1E36608F00837EF5 /* Broadcast */,
+				4BC48D971E365DE500837EF5 /* Mine */,
+				4BC48D9B1E365DE500837EF5 /* Other */,
+				4BC48D9E1E365DE500837EF5 /* Tool */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4BC48D8B1E365DE500837EF5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4BC48D8C1E365DE500837EF5 /* Controller */,
+				4BC48D8D1E365DE500837EF5 /* Model */,
+				4BC48D8E1E365DE500837EF5 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4BC48D8C1E365DE500837EF5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4BC48DA91E36753D00837EF5 /* ELTabBarVC.swift */,
+				4BC48DAB1E36755C00837EF5 /* ELNavigationVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4BC48D8D1E365DE500837EF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B1FBD7B1E37473B007A5081 /* ELChildVCItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4BC48D8E1E365DE500837EF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BC48D8F1E365DE500837EF5 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				4BC48D901E365DE500837EF5 /* Controller */,
+				4BC48D911E365DE500837EF5 /* Model */,
+				4BC48D921E365DE500837EF5 /* View */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		4BC48D901E365DE500837EF5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4BC48DA51E36643100837EF5 /* ELFeatureVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4BC48D911E365DE500837EF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4BC48D921E365DE500837EF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BC48DA71E36654600837EF5 /* ELFeaturePageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BC48D931E365DE500837EF5 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				4BC48D941E365DE500837EF5 /* Controller */,
+				4BC48D951E365DE500837EF5 /* Model */,
+				4BC48D961E365DE500837EF5 /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		4BC48D941E365DE500837EF5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B1FBD741E374182007A5081 /* ELLiveVC.swift */,
+				4B1FBD7F1E37A524007A5081 /* ELLiveListTVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4BC48D951E365DE500837EF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4BC48D961E365DE500837EF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B1FBD811E37A5BE007A5081 /* ELLiveListCell.swift */,
+				4B1FBD821E37A5BE007A5081 /* ELLiveListCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BC48D971E365DE500837EF5 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				4BC48D981E365DE500837EF5 /* Controller */,
+				4BC48D991E365DE500837EF5 /* Model */,
+				4BC48D9A1E365DE500837EF5 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		4BC48D981E365DE500837EF5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B1FBD761E3741F1007A5081 /* ELMineVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4BC48D991E365DE500837EF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4BC48D9A1E365DE500837EF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BC48D9B1E365DE500837EF5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4BC48D9C1E365DE500837EF5 /* Category */,
+				4BC48D9D1E365DE500837EF5 /* Lib */,
+				4B1FBD721E372791007A5081 /* ELConst.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4BC48D9C1E365DE500837EF5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4B1FBD7D1E375AC5007A5081 /* UIBarButtonItemExtension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4BC48D9D1E365DE500837EF5 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		4BC48D9E1E365DE500837EF5 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4BC48DA31E3662CB00837EF5 /* ELChoseRootVCTool.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		4BC48D9F1E36608F00837EF5 /* Broadcast */ = {
+			isa = PBXGroup;
+			children = (
+				4BC48DA01E36608F00837EF5 /* Controller */,
+				4BC48DA11E36608F00837EF5 /* Model */,
+				4BC48DA21E36608F00837EF5 /* View */,
+			);
+			path = Broadcast;
+			sourceTree = "<group>";
+		};
+		4BC48DA01E36608F00837EF5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4BC48DA11E36608F00837EF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4BC48DA21E36608F00837EF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BC48D581E360C7F00837EF5 /* EnjoyLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BC48D811E360C8000837EF5 /* Build configuration list for PBXNativeTarget "EnjoyLive" */;
+			buildPhases = (
+				4BC48D551E360C7F00837EF5 /* Sources */,
+				4BC48D561E360C7F00837EF5 /* Frameworks */,
+				4BC48D571E360C7F00837EF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnjoyLive;
+			productName = EnjoyLive;
+			productReference = 4BC48D591E360C7F00837EF5 /* EnjoyLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BC48D6C1E360C8000837EF5 /* EnjoyLiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BC48D841E360C8000837EF5 /* Build configuration list for PBXNativeTarget "EnjoyLiveTests" */;
+			buildPhases = (
+				4BC48D691E360C8000837EF5 /* Sources */,
+				4BC48D6A1E360C8000837EF5 /* Frameworks */,
+				4BC48D6B1E360C8000837EF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BC48D6F1E360C8000837EF5 /* PBXTargetDependency */,
+			);
+			name = EnjoyLiveTests;
+			productName = EnjoyLiveTests;
+			productReference = 4BC48D6D1E360C8000837EF5 /* EnjoyLiveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4BC48D771E360C8000837EF5 /* EnjoyLiveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BC48D871E360C8000837EF5 /* Build configuration list for PBXNativeTarget "EnjoyLiveUITests" */;
+			buildPhases = (
+				4BC48D741E360C8000837EF5 /* Sources */,
+				4BC48D751E360C8000837EF5 /* Frameworks */,
+				4BC48D761E360C8000837EF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BC48D7A1E360C8000837EF5 /* PBXTargetDependency */,
+			);
+			name = EnjoyLiveUITests;
+			productName = EnjoyLiveUITests;
+			productReference = 4BC48D781E360C8000837EF5 /* EnjoyLiveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BC48D511E360C7F00837EF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EL;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Baleen.Y;
+				TargetAttributes = {
+					4BC48D581E360C7F00837EF5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G9BNUDW354;
+						ProvisioningStyle = Automatic;
+					};
+					4BC48D6C1E360C8000837EF5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G9BNUDW354;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4BC48D581E360C7F00837EF5;
+					};
+					4BC48D771E360C8000837EF5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G9BNUDW354;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4BC48D581E360C7F00837EF5;
+					};
+				};
+			};
+			buildConfigurationList = 4BC48D541E360C7F00837EF5 /* Build configuration list for PBXProject "EnjoyLive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BC48D501E360C7F00837EF5;
+			productRefGroup = 4BC48D5A1E360C7F00837EF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BC48D581E360C7F00837EF5 /* EnjoyLive */,
+				4BC48D6C1E360C8000837EF5 /* EnjoyLiveTests */,
+				4BC48D771E360C8000837EF5 /* EnjoyLiveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BC48D571E360C7F00837EF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B1FBD841E37A5BE007A5081 /* ELLiveListCell.xib in Resources */,
+				4BC48D671E360C7F00837EF5 /* LaunchScreen.storyboard in Resources */,
+				4BC48D641E360C7F00837EF5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC48D6B1E360C8000837EF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC48D761E360C8000837EF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BC48D551E360C7F00837EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC48DA61E36643100837EF5 /* ELFeatureVC.swift in Sources */,
+				4B1FBD7C1E37473B007A5081 /* ELChildVCItem.swift in Sources */,
+				4BC48DAA1E36753D00837EF5 /* ELTabBarVC.swift in Sources */,
+				4BC48DA41E3662CB00837EF5 /* ELChoseRootVCTool.swift in Sources */,
+				4B1FBD831E37A5BE007A5081 /* ELLiveListCell.swift in Sources */,
+				4B1FBD771E3741F1007A5081 /* ELMineVC.swift in Sources */,
+				4B1FBD751E374182007A5081 /* ELLiveVC.swift in Sources */,
+				4B1FBD731E372791007A5081 /* ELConst.swift in Sources */,
+				4BC48DAC1E36755C00837EF5 /* ELNavigationVC.swift in Sources */,
+				4B1FBD801E37A524007A5081 /* ELLiveListTVC.swift in Sources */,
+				4BC48D5D1E360C7F00837EF5 /* AppDelegate.swift in Sources */,
+				4B1FBD7E1E375AC5007A5081 /* UIBarButtonItemExtension.swift in Sources */,
+				4BC48DA81E36654600837EF5 /* ELFeaturePageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC48D691E360C8000837EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC48D721E360C8000837EF5 /* EnjoyLiveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC48D741E360C8000837EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC48D7D1E360C8000837EF5 /* EnjoyLiveUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BC48D6F1E360C8000837EF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BC48D581E360C7F00837EF5 /* EnjoyLive */;
+			targetProxy = 4BC48D6E1E360C8000837EF5 /* PBXContainerItemProxy */;
+		};
+		4BC48D7A1E360C8000837EF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BC48D581E360C7F00837EF5 /* EnjoyLive */;
+			targetProxy = 4BC48D791E360C8000837EF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BC48D651E360C7F00837EF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BC48D661E360C7F00837EF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BC48D7F1E360C8000837EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BC48D801E360C8000837EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BC48D821E360C8000837EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G9BNUDW354;
+				INFOPLIST_FILE = EnjoyLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qq.vip-yangjingxu126";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4BC48D831E360C8000837EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G9BNUDW354;
+				INFOPLIST_FILE = EnjoyLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qq.vip-yangjingxu126";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4BC48D851E360C8000837EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G9BNUDW354;
+				INFOPLIST_FILE = EnjoyLiveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qq.vip-yangjingxu126.EnjoyLiveTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnjoyLive.app/EnjoyLive";
+			};
+			name = Debug;
+		};
+		4BC48D861E360C8000837EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G9BNUDW354;
+				INFOPLIST_FILE = EnjoyLiveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qq.vip-yangjingxu126.EnjoyLiveTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnjoyLive.app/EnjoyLive";
+			};
+			name = Release;
+		};
+		4BC48D881E360C8000837EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = G9BNUDW354;
+				INFOPLIST_FILE = EnjoyLiveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qq.vip-yangjingxu126.EnjoyLiveUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = EnjoyLive;
+			};
+			name = Debug;
+		};
+		4BC48D891E360C8000837EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = G9BNUDW354;
+				INFOPLIST_FILE = EnjoyLiveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qq.vip-yangjingxu126.EnjoyLiveUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = EnjoyLive;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BC48D541E360C7F00837EF5 /* Build configuration list for PBXProject "EnjoyLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC48D7F1E360C8000837EF5 /* Debug */,
+				4BC48D801E360C8000837EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BC48D811E360C8000837EF5 /* Build configuration list for PBXNativeTarget "EnjoyLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC48D821E360C8000837EF5 /* Debug */,
+				4BC48D831E360C8000837EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BC48D841E360C8000837EF5 /* Build configuration list for PBXNativeTarget "EnjoyLiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC48D851E360C8000837EF5 /* Debug */,
+				4BC48D861E360C8000837EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BC48D871E360C8000837EF5 /* Build configuration list for PBXNativeTarget "EnjoyLiveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC48D881E360C8000837EF5 /* Debug */,
+				4BC48D891E360C8000837EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BC48D511E360C7F00837EF5 /* Project object */;
+}
