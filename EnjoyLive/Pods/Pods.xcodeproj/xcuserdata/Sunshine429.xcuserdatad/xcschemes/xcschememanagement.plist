@@ -9,17 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-EnjoyLive.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-EnjoyLiveTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-EnjoyLiveUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,7 +22,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>11E256096B8EEEC9151B98AFEE275140</key>
+		<key>5AA17C95E926B760FD08E0B487DAEFA2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,12 +32,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AB46CCCDA63AD783F9A03B40D2B44C89</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EA932E28A4AED84022F897373BFD4AFC</key>
+		<key>D63D2ACB3D2C629349F20C0B9A36F077</key>
 		<dict>
 			<key>primary</key>
 			<true/>

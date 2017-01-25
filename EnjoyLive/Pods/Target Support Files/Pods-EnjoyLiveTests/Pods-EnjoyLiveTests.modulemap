@@ -1,6 +1,0 @@
-framework module Pods_EnjoyLiveTests {
-  umbrella header "Pods-EnjoyLiveTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

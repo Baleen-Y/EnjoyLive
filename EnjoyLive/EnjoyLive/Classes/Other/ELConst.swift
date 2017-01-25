@@ -19,3 +19,4 @@ let ELSelectedColor = UIColor(red: 12.0/255.0, green: 96.0/255.0, blue: 219.0/25
 
 // MARK: - liveList 相关
 let ELLiveListCellH: CGFloat = 121.0
+let ELLiveListURL = "http://m.quzhiboapp.com/api/lives/on"

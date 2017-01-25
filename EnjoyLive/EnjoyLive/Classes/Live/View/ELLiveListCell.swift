@@ -27,6 +27,11 @@ class ELLiveListCell: UITableViewCell {
     
     @IBOutlet weak var statusLabel: UILabel!
     
+    var listItem: ELLiveListItem? {
+        didSet {
+            self.setupUI()
+        }
+    }
 
 }
 
@@ -42,4 +47,17 @@ extension ELLiveListCell {
         }
         return cell!
     }
+    
+    
+    func setupUI() {
+        // 设置标题
+        subjectLabel.text = listItem?.subject
+        // 设置作者
+        usernameLabel.text = listItem?.owner.username
+        // 设置参与人数
+        attendanceCountLabel.text = listItem?.attendanceCount.description
+        // 设置价格
+        amountLabel.text = listItem?.amount.description
+    }
+    
 }
