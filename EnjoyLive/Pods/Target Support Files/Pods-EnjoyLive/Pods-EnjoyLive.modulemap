@@ -1,0 +1,6 @@
+framework module Pods_EnjoyLive {
+  umbrella header "Pods-EnjoyLive-umbrella.h"
+
+  export *
+  module * { export * }
+}
