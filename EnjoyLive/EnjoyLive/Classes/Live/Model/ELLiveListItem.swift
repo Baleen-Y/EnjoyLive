@@ -11,6 +11,7 @@ import Alamofire
 import MJExtension
 
 class ELLiveListItem: NSObject {
+    
     // MARK: - 属性
     /// 主题名
     var subject: String = ""

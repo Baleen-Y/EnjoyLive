@@ -6,8 +6,7 @@ target 'EnjoyLive' do
   use_frameworks!
     pod 'Alamofire', '~> 4.3'
     pod 'MJExtension'
-
-
+    pod 'YYWebImage'
 
 
   target 'EnjoyLiveTests' do

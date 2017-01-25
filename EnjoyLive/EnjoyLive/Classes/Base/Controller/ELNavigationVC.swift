@@ -9,7 +9,6 @@
 import UIKit
 
 class ELNavigationVC: UINavigationController {
-
     
     /// 重写系统方法
     override class func initialize() {

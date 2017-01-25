@@ -29,9 +29,16 @@ class ELLiveVC: UIViewController {
 // MARK: - 自定义方法
 extension ELLiveVC {
     func setupUI() {
+        // 设置导航栏头部
+        let titleView = UIImageView(image: #imageLiteral(resourceName: "EnjoyLive"))
+        titleView.sizeToFit()
+        navigationItem.titleView = titleView
         // 创建列表控制器
         let listVC = ELLiveListTVC()
+        let listView = listVC.view
+        listView?.frame = CGRect(origin: CGPoint.zero, size: ELScreenBounds.size)
         addChildViewController(listVC)
-        view.addSubview(listVC.view)
+//        automaticallyAdjustsScrollViewInsets = false
+        view.addSubview(listView!)
     }
 }
