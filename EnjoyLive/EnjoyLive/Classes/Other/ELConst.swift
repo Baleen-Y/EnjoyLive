@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 // MARK: - 屏幕尺寸
 let ELScreenBounds = UIScreen.main.bounds
 let ELScreenWidth = ELScreenBounds.width

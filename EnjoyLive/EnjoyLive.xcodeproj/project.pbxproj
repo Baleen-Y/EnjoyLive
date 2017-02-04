@@ -20,6 +20,8 @@
 		4B1FBD881E38940F007A5081 /* ELLiveOwnerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FBD871E38940F007A5081 /* ELLiveOwnerItem.swift */; };
 		4B59FB4F1E39173C0037E352 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B59FB4E1E39173C0037E352 /* StringExtension.swift */; };
 		4B59FB511E3922470037E352 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B59FB501E3922470037E352 /* DateExtension.swift */; };
+		4BC2459A1E39FD3B0083DDA9 /* ELPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC245991E39FD3B0083DDA9 /* ELPrint.swift */; };
+		4BC2459C1E3A01740083DDA9 /* ELMineTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC2459B1E3A01740083DDA9 /* ELMineTableVC.swift */; };
 		4BC48D5D1E360C7F00837EF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC48D5C1E360C7F00837EF5 /* AppDelegate.swift */; };
 		4BC48D641E360C7F00837EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC48D631E360C7F00837EF5 /* Assets.xcassets */; };
 		4BC48D671E360C7F00837EF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC48D651E360C7F00837EF5 /* LaunchScreen.storyboard */; };
@@ -66,6 +68,8 @@
 		4B1FBD871E38940F007A5081 /* ELLiveOwnerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLiveOwnerItem.swift; sourceTree = "<group>"; };
 		4B59FB4E1E39173C0037E352 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		4B59FB501E3922470037E352 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		4BC245991E39FD3B0083DDA9 /* ELPrint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELPrint.swift; sourceTree = "<group>"; };
+		4BC2459B1E3A01740083DDA9 /* ELMineTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMineTableVC.swift; sourceTree = "<group>"; };
 		4BC48D591E360C7F00837EF5 /* EnjoyLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnjoyLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC48D5C1E360C7F00837EF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BC48D631E360C7F00837EF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -334,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				4B1FBD761E3741F1007A5081 /* ELMineVC.swift */,
+				4BC2459B1E3A01740083DDA9 /* ELMineTableVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -358,6 +363,7 @@
 				4BC48D9C1E365DE500837EF5 /* Category */,
 				4BC48D9D1E365DE500837EF5 /* Lib */,
 				4B1FBD721E372791007A5081 /* ELConst.swift */,
+				4BC245991E39FD3B0083DDA9 /* ELPrint.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -703,12 +709,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BC2459C1E3A01740083DDA9 /* ELMineTableVC.swift in Sources */,
 				4BC48DA61E36643100837EF5 /* ELFeatureVC.swift in Sources */,
 				4B59FB511E3922470037E352 /* DateExtension.swift in Sources */,
 				4B1FBD7C1E37473B007A5081 /* ELChildVCItem.swift in Sources */,
 				4BC48DAA1E36753D00837EF5 /* ELTabBarVC.swift in Sources */,
 				4BC48DA41E3662CB00837EF5 /* ELChoseRootVCTool.swift in Sources */,
 				4B59FB4F1E39173C0037E352 /* StringExtension.swift in Sources */,
+				4BC2459A1E39FD3B0083DDA9 /* ELPrint.swift in Sources */,
 				4B1FBD831E37A5BE007A5081 /* ELLiveListCell.swift in Sources */,
 				4B1FBD771E3741F1007A5081 /* ELMineVC.swift in Sources */,
 				4B1FBD751E374182007A5081 /* ELLiveVC.swift in Sources */,

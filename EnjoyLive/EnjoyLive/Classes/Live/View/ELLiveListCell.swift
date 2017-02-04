@@ -45,6 +45,7 @@ extension ELLiveListCell {
         if cell == nil {
             tableView.register(UINib(nibName: "ELLiveListCell", bundle: nil), forCellReuseIdentifier: identifier)
             cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? ELLiveListCell
+            
         }
         return cell!
     }
@@ -78,7 +79,7 @@ extension ELLiveListCell {
         // 计划时间
         let planTime = listItem.planTs.date()
         // 更新时间(即当前时间)
-        let updateTime = listItem.updated.date()
+        let updateTime = Date()
         // 结束时间
         let endTime = listItem.endTs.date()
         // 开始时间
@@ -87,11 +88,12 @@ extension ELLiveListCell {
         statusLabel.isHidden = true
         statusImageView.isHidden = false
         // 比较时间
-        if updateTime.isEnd(endTime) { // 直播完毕
-            statusImageView.image = #imageLiteral(resourceName: "rebroadcast")
-        }else if updateTime.isLiving(beginTime, endTime) { // 正在直播
+        
+        if updateTime.isLiving(beginTime, endTime) { // 正在直播
             statusImageView.image = #imageLiteral(resourceName: "living")
-        } else { // 直播还未开始
+        }else if updateTime.isEnd(planTime) { // 直播结束(由于还未直播的 endTime 和 beginTime 是给定的过去式，如果未在第一步，而这里返回是 true 则直播处于结束状态，和上面的顺序不能颠倒，因为这里才用的是'计划时间')
+            statusImageView.image = #imageLiteral(resourceName: "rebroadcast")
+        }else { // 直播还未开始
             statusImageView.isHidden = true
             statusLabel.isHidden = false
             var day: Int = 0

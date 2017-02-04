@@ -19,6 +19,7 @@ class ELTabBarVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupChildVC()
+        setupLaunchLiving()
     }
 
 }
@@ -28,7 +29,7 @@ class ELTabBarVC: UITabBarController {
 extension ELTabBarVC {
     
     /// 配置 tabBar
-    class func setupTabBar() {
+    fileprivate class func setupTabBar() {
         // 修改 tabBarItem 样式
         var tabBarItem: UITabBarItem
         if #available(iOS 9.0, *) {
@@ -60,13 +61,28 @@ extension ELTabBarVC {
     }
     
     /// 配置子控制器
-    func setupChildVC() {
+    fileprivate func setupChildVC() {
         let childVCArr = ELChildVCItem.getChildVCArr()
         for childVC in childVCArr {
             addChildViewController(childVC)
         }
     }
     
+    // 配置中间发起直播按钮
+    fileprivate func setupLaunchLiving() {
+        let centerX = tabBar.bounds.width * 0.5
+        let centerY = tabBar.bounds.height * 0.5
+        let launchLivingBtn = UIButton()
+        launchLivingBtn.setImage(#imageLiteral(resourceName: "EnjoyLive"), for: .normal)
+        launchLivingBtn.sizeToFit()
+        launchLivingBtn.center = CGPoint(x: centerX, y: centerY)
+        tabBar.addSubview(launchLivingBtn)
+        launchLivingBtn.addTarget(self, action: #selector(launchLivingBtnClick), for: .touchUpInside)
+    }
+    
+    @objc fileprivate func launchLivingBtnClick() {
+        
+    }
 }
 
 

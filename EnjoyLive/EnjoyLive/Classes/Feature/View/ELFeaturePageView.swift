@@ -14,9 +14,9 @@ fileprivate let pageIndicatorWH = 15
 class ELFeaturePageView: UIView {
 
     // MARK: - 属性
-    var scrollView: UIScrollView?
-    var pageControl: UIPageControl?
-    var count: Int = 0
+    fileprivate var scrollView: UIScrollView?
+    fileprivate var pageControl: UIPageControl?
+    fileprivate var count: Int = 0
     var pictures: [UIImage] = [] {
         didSet {
             self.setNeedsLayout()
@@ -77,7 +77,7 @@ class ELFeaturePageView: UIView {
 extension ELFeaturePageView {
     
     /// UI 控件初始化
-    func setUI() {
+    fileprivate func setUI() {
         
         /// scrollView 初始化
         let scrollView = UIScrollView()

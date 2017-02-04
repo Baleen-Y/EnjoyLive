@@ -11,7 +11,7 @@ import UIKit
 class ELLiveListTVC: UITableViewController {
     
     // MARK: - 属性
-    var listItems: [ELLiveListItem] = [] {
+    fileprivate var listItems: [ELLiveListItem] = [] {
         didSet {
             self.tableView.reloadData()
         }
@@ -37,10 +37,20 @@ extension ELLiveListTVC {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = ELLiveListCell.cell(tableView)
         cell.listItem = listItems[indexPath.row]
+        
         return cell
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return ELLiveListCellH
     }
     
+}
+
+// MARK: - Table view delegate
+extension ELLiveListTVC {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        
+    }
 }

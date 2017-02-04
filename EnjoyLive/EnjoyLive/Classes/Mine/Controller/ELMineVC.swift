@@ -10,26 +10,39 @@ import UIKit
 
 class ELMineVC: UIViewController {
 
+    // MARK: - 重写系统方法
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupNavigation()
+        setupUI()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+}
+
+
+// MARK: - 自定义方法
+extension ELMineVC {
+    
+    /// 设置状态栏
+    fileprivate func setupNavigation() {
+        
+        let settingBtn = UIBarButtonItem.highlightItem(#imageLiteral(resourceName: "navigationBar-setting"), nil, self, action: #selector(settingBtnClick))
+        navigationItem.rightBarButtonItem = settingBtn
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    /// 设置界面
+    fileprivate func setupUI() {
+        let mineTableVC = ELMineTableVC()
+        addChildViewController(mineTableVC)
+        let mineTableView = mineTableVC.tableView
+        mineTableView?.frame = CGRect(origin: CGPoint.zero, size: ELScreenBounds.size)
+        view.addSubview(mineTableView!)
     }
-    */
-
+    
+    
+    /// 设置按钮的点击
+    @objc fileprivate func settingBtnClick() {
+        ELPrint("settingBtnClick")
+    }
 }

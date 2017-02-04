@@ -21,7 +21,7 @@ class ELFeatureVC: UIViewController {
     }
     
     deinit {
-        print("dead")
+        ELPrint("dead")
     }
 
 }

@@ -22,6 +22,6 @@ extension String {
     func date() -> Date {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        return formatter.date(from: self) ?? Date()
+        return formatter.date(from: self) ?? Date.distantFuture
     }
 }

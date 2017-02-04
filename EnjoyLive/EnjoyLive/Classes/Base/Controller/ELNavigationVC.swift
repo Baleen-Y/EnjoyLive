@@ -37,7 +37,7 @@ class ELNavigationVC: UINavigationController {
 // MARK: - 自定义方法
 extension ELNavigationVC {
     
-    static func setupNavigationBar() {
+    fileprivate static func setupNavigationBar() {
         // 修改 navigationBar 样式
         var navigationBar: UINavigationBar
         if #available(iOS 9.0, *) {

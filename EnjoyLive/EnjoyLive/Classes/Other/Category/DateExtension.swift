@@ -46,7 +46,7 @@ extension Date {
     /// 判断是不是大于一天，如果大于一天将参数 day 赋值
     func isOutOneDay(_ updateTime: Date, _ day: inout Int) -> Bool {
         let calendar = Calendar.current
-        let result = calendar.dateComponents([.day], from: self, to: updateTime)
+        let result = calendar.dateComponents([.day], from: updateTime, to: self)
         guard let resultDay = result.day else {
             return false
         }
@@ -56,7 +56,7 @@ extension Date {
     /// 判断是不是大于一个小时(小于一天), 如果大于一个小时 hour 赋值
     func isOutOneHour(_ updateTime: Date, _ hour: inout Int) -> Bool {
         let calendar = Calendar.current
-        let result = calendar.dateComponents([.hour], from: self, to: updateTime)
+        let result = calendar.dateComponents([.hour], from: updateTime, to: self)
         guard let resultHour = result.hour else {
             return false
         }
