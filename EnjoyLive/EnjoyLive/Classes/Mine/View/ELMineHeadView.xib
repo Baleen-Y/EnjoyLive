@@ -27,22 +27,21 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="趣直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PY-YH-RyA" userLabel="用户名">
-                            <rect key="frame" x="161.5" y="35" width="52" height="21"/>
+                            <rect key="frame" x="162" y="35" width="52" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="EL0-B3-WAt"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60v-Vs-xcy">
-                            <rect key="frame" x="163" y="73" width="51" height="31"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </switch>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="0PY-YH-RyA" firstAttribute="centerX" secondItem="zDu-Zt-fOa" secondAttribute="centerX" id="1v4-tN-fCU"/>
                         <constraint firstItem="rxP-kf-VC0" firstAttribute="centerX" secondItem="zDu-Zt-fOa" secondAttribute="centerX" id="61O-UN-xPD"/>
                         <constraint firstItem="0PY-YH-RyA" firstAttribute="top" secondItem="rxP-kf-VC0" secondAttribute="bottom" constant="5" id="9XI-uh-But"/>
-                        <constraint firstItem="rxP-kf-VC0" firstAttribute="top" secondItem="zDu-Zt-fOa" secondAttribute="top" constant="-30" id="Qx4-2R-6iM"/>
+                        <constraint firstItem="rxP-kf-VC0" firstAttribute="bottom" secondItem="zDu-Zt-fOa" secondAttribute="top" constant="30" id="Qx4-2R-6iM"/>
                     </constraints>
                 </view>
             </subviews>

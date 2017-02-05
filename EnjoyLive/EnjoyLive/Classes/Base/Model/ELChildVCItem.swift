@@ -16,12 +16,12 @@ class ELChildVCItem {
     class func getChildVCArr() -> [UIViewController] {
         // 1. 直播控制器
         let liveVC = ELLiveVC()
-        let liveNav = addNavigation(liveVC, #imageLiteral(resourceName: "tabBar-live"), #imageLiteral(resourceName: "tabBar-liveSelected"), nil)
+        let liveNav = addNavigation(liveVC, #imageLiteral(resourceName: "tabBar-live"), #imageLiteral(resourceName: "tabBar-liveSelected"), "直播")
         // 2. 空控制器(占位)
         let blankVC = UIViewController()
         // 3. 我的控制器
         let mineVC = ELMineVC()
-        let mineNav = addNavigation(mineVC, #imageLiteral(resourceName: "tabBar-mine"), #imageLiteral(resourceName: "tabBar-mineSelected"), nil)
+        let mineNav = addNavigation(mineVC, #imageLiteral(resourceName: "tabBar-mine"), #imageLiteral(resourceName: "tabBar-mineSelected"), "我的")
         
         // 4. 返回
         return [liveNav, blankVC, mineNav]

@@ -10,6 +10,17 @@ import UIKit
 
 class ELNavigationVC: UINavigationController {
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        get {
+            if (topViewController?.isKind(of: ELMineVC.self))! {
+                return .lightContent
+            } else {
+                return .default
+            }
+            
+        }
+    }
+    
     /// 重写系统方法
     override class func initialize() {
         super.initialize()

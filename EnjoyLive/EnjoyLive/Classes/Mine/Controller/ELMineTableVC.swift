@@ -8,7 +8,20 @@
 
 import UIKit
 fileprivate let identifier = "mineCell"
+
+protocol ELMineTableVCDelegate: NSObjectProtocol {
+    
+    /// 滚动 tableView 调用
+    ///
+    /// - Parameter mineTableView: tableView
+    func mineTableViewDidScroll(_ mineTableView: UITableView)
+}
+
 class ELMineTableVC: UITableViewController {
+    
+    // MARK: - 属性
+    var delegate: ELMineTableVCDelegate?
+    var profileView: ELMineHeadView?
     
     // MARK: - 重写系统方法
     override func viewDidLoad() {
@@ -51,7 +64,25 @@ extension ELMineTableVC {
 extension ELMineTableVC {
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
+        ELPrint(scrollView.contentOffset)
+        let offsetY = scrollView.contentOffset.y
+        guard let profileView = profileView else {
+            return
+        }
+        /// 偏移大于 20 小于 50 头像开始变化
+        if offsetY > ELProfileTopMargin && offsetY <= ELProfileMargin {
+            
+            profileView.avatarImageViewWidth.constant = ELAvatarWidth - (offsetY - ELProfileTopMargin)
+            
+            
+        }else if offsetY < ELProfileTopMargin {
+            profileView.avatarImageViewWidth.constant = ELAvatarWidth
+        }
+        /// 其他操作
+        guard let delegate = delegate else {
+            return
+        }
+        delegate.mineTableViewDidScroll(tableView)
     }
     
 }
@@ -70,5 +101,6 @@ extension ELMineTableVC {
         profileView.frame = CGRect(x: 0, y: 0, width: ELScreenWidth, height: ELProfileViewHeight)
         headerView?.frame = profileView.frame
         headerView?.addSubview(profileView)
+        self.profileView = profileView
     }
 }

@@ -27,3 +27,6 @@ let ELLiveListURL = "http://m.quzhiboapp.com/api/lives/on"
 // MARK: - mine 相关
 let ELProfileViewHeight: CGFloat = 200
 let ELProfileTopMargin: CGFloat = 20
+let ELProfileMargin: CGFloat = 50
+let ELAvatarWidth: CGFloat = 60
+let ELUsernameTopMargin: CGFloat = 85
