@@ -70,7 +70,7 @@ extension ELMineVC {
     
     /// 设置界面
     fileprivate func setupUI() {
-        view.backgroundColor = UIColor.gray
+        view.backgroundColor = UIColor.white
         /// 添加背景
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: ELScreenWidth, height: 0))
         view.addSubview(imageView)
@@ -80,7 +80,7 @@ extension ELMineVC {
         let toolBar = UIToolbar()
         toolBar.barStyle = .black
         imageView.addSubview(toolBar)
-        toolBar.alpha = 0
+        toolBar.alpha = 0.5
         backImageToolbar = toolBar
         
         /// 添加主内容
@@ -112,10 +112,10 @@ extension ELMineVC: ELMineTableVCDelegate {
         /// 模糊背景
         if offsetY > ELProfileTopMargin {
             /// 模糊背景
-            let alpha = 0.9 * (offsetY - ELProfileTopMargin) / ELUsernameTopMargin
+            let alpha = 0.4 * (offsetY - ELProfileTopMargin) / ELUsernameTopMargin + 0.5
             backImageToolbar?.alpha = alpha
         } else if offsetY < ELProfileTopMargin {
-            backImageToolbar?.alpha = 0
+            backImageToolbar?.alpha = 0.5
         }
         
         guard let navigationBar = navigationController?.navigationBar else {
@@ -134,7 +134,7 @@ extension ELMineVC: ELMineTableVCDelegate {
             titleLabel.center.y = centerY - (offsetY - ELUsernameTopMargin)
         } else if offsetY < ELUsernameTopMargin {
             titleLabel.center.y = centerY
-        } else { /// 防止滑动速度过快的 bug
+        } else if offsetY > ELUsernameTopMargin + offsetLabel{ /// 防止滑动速度过快的 bug
             titleLabel.center.y = navigationBar.frame.height * 0.5
         }
         
@@ -160,6 +160,7 @@ extension ELMineVC: ELMineTableVCDelegate {
             let height = imageH
             backImageView.frame = CGRect(x: 0, y: 0, width: ELScreenWidth, height: height)
         }
+        backImageToolbar?.frame = backImageView.bounds
 
     }
 }
