@@ -18,6 +18,8 @@
 		4B1FBD841E37A5BE007A5081 /* ELLiveListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1FBD821E37A5BE007A5081 /* ELLiveListCell.xib */; };
 		4B1FBD861E3893EA007A5081 /* ELLiveListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FBD851E3893EA007A5081 /* ELLiveListItem.swift */; };
 		4B1FBD881E38940F007A5081 /* ELLiveOwnerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1FBD871E38940F007A5081 /* ELLiveOwnerItem.swift */; };
+		4B272CB21E4718C2007EFE72 /* ELMineHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B272CB11E4718C2007EFE72 /* ELMineHeadView.swift */; };
+		4B272CB41E4719CC007EFE72 /* ELMineHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B272CB31E4719CC007EFE72 /* ELMineHeadView.xib */; };
 		4B59FB4F1E39173C0037E352 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B59FB4E1E39173C0037E352 /* StringExtension.swift */; };
 		4B59FB511E3922470037E352 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B59FB501E3922470037E352 /* DateExtension.swift */; };
 		4BC2459A1E39FD3B0083DDA9 /* ELPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC245991E39FD3B0083DDA9 /* ELPrint.swift */; };
@@ -66,6 +68,8 @@
 		4B1FBD821E37A5BE007A5081 /* ELLiveListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELLiveListCell.xib; sourceTree = "<group>"; };
 		4B1FBD851E3893EA007A5081 /* ELLiveListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLiveListItem.swift; sourceTree = "<group>"; };
 		4B1FBD871E38940F007A5081 /* ELLiveOwnerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELLiveOwnerItem.swift; sourceTree = "<group>"; };
+		4B272CB11E4718C2007EFE72 /* ELMineHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELMineHeadView.swift; sourceTree = "<group>"; };
+		4B272CB31E4719CC007EFE72 /* ELMineHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELMineHeadView.xib; sourceTree = "<group>"; };
 		4B59FB4E1E39173C0037E352 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		4B59FB501E3922470037E352 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		4BC245991E39FD3B0083DDA9 /* ELPrint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELPrint.swift; sourceTree = "<group>"; };
@@ -353,6 +357,8 @@
 		4BC48D9A1E365DE500837EF5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4B272CB11E4718C2007EFE72 /* ELMineHeadView.swift */,
+				4B272CB31E4719CC007EFE72 /* ELMineHeadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -546,6 +552,7 @@
 			files = (
 				4B1FBD841E37A5BE007A5081 /* ELLiveListCell.xib in Resources */,
 				4BC48D671E360C7F00837EF5 /* LaunchScreen.storyboard in Resources */,
+				4B272CB41E4719CC007EFE72 /* ELMineHeadView.xib in Resources */,
 				4BC48D641E360C7F00837EF5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -723,6 +730,7 @@
 				4B1FBD731E372791007A5081 /* ELConst.swift in Sources */,
 				4BC48DAC1E36755C00837EF5 /* ELNavigationVC.swift in Sources */,
 				4B1FBD881E38940F007A5081 /* ELLiveOwnerItem.swift in Sources */,
+				4B272CB21E4718C2007EFE72 /* ELMineHeadView.swift in Sources */,
 				4B1FBD861E3893EA007A5081 /* ELLiveListItem.swift in Sources */,
 				4B1FBD801E37A524007A5081 /* ELLiveListTVC.swift in Sources */,
 				4BC48D5D1E360C7F00837EF5 /* AppDelegate.swift in Sources */,

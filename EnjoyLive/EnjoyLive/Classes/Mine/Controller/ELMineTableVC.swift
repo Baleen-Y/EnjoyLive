@@ -13,6 +13,7 @@ class ELMineTableVC: UITableViewController {
     // MARK: - 重写系统方法
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupProfileUI()
     }
     
 }
@@ -37,6 +38,21 @@ extension ELMineTableVC {
         
         return cell!
     }
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let segmentedControl = UISegmentedControl(items: ["趣直播", "火火火"])
+        segmentedControl.selectedSegmentIndex = 0
+        segmentedControl.backgroundColor = UIColor.white
+        return segmentedControl
+    }
+}
+
+
+// MARK: - 代理方法
+extension ELMineTableVC {
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+    }
     
 }
 
@@ -45,6 +61,14 @@ extension ELMineTableVC {
     
     /// 个人简介设置
     fileprivate func setupProfileUI() {
+        tableView.backgroundColor = UIColor.clear
+        tableView.sectionHeaderHeight = 38
         
+        tableView.tableHeaderView = UIView()
+        let headerView = tableView.tableHeaderView as UIView!
+        let profileView = ELMineHeadView.headView()
+        profileView.frame = CGRect(x: 0, y: 0, width: ELScreenWidth, height: ELProfileViewHeight)
+        headerView?.frame = profileView.frame
+        headerView?.addSubview(profileView)
     }
 }

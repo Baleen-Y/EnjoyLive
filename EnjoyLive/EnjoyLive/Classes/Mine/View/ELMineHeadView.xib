@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ELMineHeadView" customModule="EnjoyLive" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDu-Zt-fOa">
+                    <rect key="frame" x="0.0" y="50" width="375" height="150"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EnjoyLive" translatesAutoresizingMaskIntoConstraints="NO" id="rxP-kf-VC0" userLabel="头像">
+                            <rect key="frame" x="158" y="-30" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="rxP-kf-VC0" secondAttribute="height" multiplier="1:1" id="A20-dG-XHQ"/>
+                                <constraint firstAttribute="width" constant="60" id="quK-A7-KZe"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="趣直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PY-YH-RyA" userLabel="用户名">
+                            <rect key="frame" x="161.5" y="35" width="52" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60v-Vs-xcy">
+                            <rect key="frame" x="163" y="73" width="51" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </switch>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="0PY-YH-RyA" firstAttribute="centerX" secondItem="zDu-Zt-fOa" secondAttribute="centerX" id="1v4-tN-fCU"/>
+                        <constraint firstItem="rxP-kf-VC0" firstAttribute="centerX" secondItem="zDu-Zt-fOa" secondAttribute="centerX" id="61O-UN-xPD"/>
+                        <constraint firstItem="0PY-YH-RyA" firstAttribute="top" secondItem="rxP-kf-VC0" secondAttribute="bottom" constant="5" id="9XI-uh-But"/>
+                        <constraint firstItem="rxP-kf-VC0" firstAttribute="top" secondItem="zDu-Zt-fOa" secondAttribute="top" constant="-30" id="Qx4-2R-6iM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zDu-Zt-fOa" secondAttribute="trailing" id="AEY-Cv-WsZ"/>
+                <constraint firstItem="zDu-Zt-fOa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="hyv-et-Vmz"/>
+                <constraint firstAttribute="bottom" secondItem="zDu-Zt-fOa" secondAttribute="bottom" id="rxW-3O-8HA"/>
+                <constraint firstItem="zDu-Zt-fOa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vlC-2R-BaE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatarImageView" destination="rxP-kf-VC0" id="WGs-Wh-VU0"/>
+                <outlet property="avatarImageViewWidth" destination="quK-A7-KZe" id="rZM-gU-aL3"/>
+                <outlet property="usernameLabel" destination="0PY-YH-RyA" id="jqO-yd-ess"/>
+            </connections>
+            <point key="canvasLocation" x="-13.5" y="22"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="EnjoyLive" width="50" height="30"/>
+    </resources>
+</document>
