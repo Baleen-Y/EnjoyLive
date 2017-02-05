@@ -19,6 +19,7 @@ class ELChildVCItem {
         let liveNav = addNavigation(liveVC, #imageLiteral(resourceName: "tabBar-live"), #imageLiteral(resourceName: "tabBar-liveSelected"), "直播")
         // 2. 空控制器(占位)
         let blankVC = UIViewController()
+        blankVC.tabBarItem.isEnabled = false
         // 3. 我的控制器
         let mineVC = ELMineVC()
         let mineNav = addNavigation(mineVC, #imageLiteral(resourceName: "tabBar-mine"), #imageLiteral(resourceName: "tabBar-mineSelected"), "我的")

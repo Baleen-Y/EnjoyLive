@@ -81,7 +81,8 @@ extension ELTabBarVC {
     }
     
     @objc fileprivate func launchLivingBtnClick() {
-        
+        let broadcastVC = ELBroadcastVC()
+        present(broadcastVC, animated: true, completion: nil)
     }
 }
 

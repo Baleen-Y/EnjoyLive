@@ -70,7 +70,7 @@ extension ELMineVC {
     
     /// 设置界面
     fileprivate func setupUI() {
-        
+        view.backgroundColor = UIColor.gray
         /// 添加背景
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: ELScreenWidth, height: 0))
         view.addSubview(imageView)

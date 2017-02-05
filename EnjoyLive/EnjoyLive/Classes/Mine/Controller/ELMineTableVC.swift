@@ -64,7 +64,6 @@ extension ELMineTableVC {
 extension ELMineTableVC {
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        ELPrint(scrollView.contentOffset)
         let offsetY = scrollView.contentOffset.y
         guard let profileView = profileView else {
             return
