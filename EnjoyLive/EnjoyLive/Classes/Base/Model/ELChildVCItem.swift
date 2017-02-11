@@ -28,7 +28,7 @@ class ELChildVCItem {
         return [liveNav, blankVC, mineNav]
     }
     
-    static func addNavigation(_ rootVC: UIViewController, _ image: UIImage,_ selectedImage: UIImage, _ title: String?) -> ELNavigationVC {
+    static private func addNavigation(_ rootVC: UIViewController, _ image: UIImage,_ selectedImage: UIImage, _ title: String?) -> ELNavigationVC {
         let navVC = ELNavigationVC(rootViewController: rootVC)
         navVC.tabBarItem.image = image
         navVC.tabBarItem.selectedImage = selectedImage

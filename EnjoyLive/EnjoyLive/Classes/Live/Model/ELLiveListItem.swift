@@ -67,7 +67,7 @@ extension ELLiveListItem {
     static func getListItems(_ complete:@escaping ([ELLiveListItem])->()) {
         Alamofire.request(ELLiveListURL).responseJSON { (dataResponse: DataResponse<Any>) in
             guard let JSON = dataResponse.result.value as? [String : Any] else{
-                print("请求失败")
+                ELPrint("请求失败")
                 return
             }
             guard let result = JSON["result"] else {

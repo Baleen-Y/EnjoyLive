@@ -31,18 +31,18 @@ extension ELLiveVC {
     
     /// 设置导航栏
     fileprivate func setupNavigation() {
-        // 设置导航栏中部
+        /// 设置导航栏中部
         let titleView = UIImageView(image: #imageLiteral(resourceName: "EnjoyLive"))
         titleView.sizeToFit()
         navigationItem.titleView = titleView
-        // 设置导航栏右侧
+        /// 设置导航栏右侧
         navigationItem.rightBarButtonItem = UIBarButtonItem.highlightItem(#imageLiteral(resourceName: "navigationBar-search"), nil, self, action: #selector(search))
     }
     
     /// 设置 UI
     fileprivate func setupUI() {
         
-        // 创建列表控制器
+        /// 创建列表控制器
         let listVC = ELLiveListTVC()
         let listView = listVC.view
         listView?.frame = CGRect(origin: CGPoint.zero, size: ELScreenBounds.size)

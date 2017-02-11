@@ -30,12 +30,12 @@ extension ELTabBarVC {
     
     /// 配置 tabBar
     fileprivate class func setupTabBar() {
-        // 修改 tabBarItem 样式
+        /// 修改 tabBarItem 样式
         var tabBarItem: UITabBarItem
         if #available(iOS 9.0, *) {
             tabBarItem = UITabBarItem.appearance(whenContainedInInstancesOf: [ELTabBarVC.self])
         } else {
-            // Fallback on earlier versions
+            /// Fallback on earlier versions
             tabBarItem = UITabBarItem.appearance()
         }
         let attNormal = [
@@ -49,7 +49,7 @@ extension ELTabBarVC {
         ]
         tabBarItem.setTitleTextAttributes(attSelected, for: .selected)
         
-        // 修改 tabBar 样式
+        /// 修改 tabBar 样式
         var tabBar: UITabBar
         if #available(iOS 9.0, *) {
             tabBar = UITabBar.appearance(whenContainedInInstancesOf: [ELTabBarVC.self])

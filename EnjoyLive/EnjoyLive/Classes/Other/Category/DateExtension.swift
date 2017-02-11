@@ -47,20 +47,26 @@ extension Date {
     func isOutOneDay(_ updateTime: Date, _ day: inout Int) -> Bool {
         let calendar = Calendar.current
         let result = calendar.dateComponents([.day], from: updateTime, to: self)
-        guard let resultDay = result.day else {
-            return false
+        if let resultDay = result.day {
+            if resultDay <= 0 {
+                return false
+            }
+            day = resultDay
         }
-        day = resultDay
         return true
     }
     /// 判断是不是大于一个小时(小于一天), 如果大于一个小时 hour 赋值
     func isOutOneHour(_ updateTime: Date, _ hour: inout Int) -> Bool {
         let calendar = Calendar.current
         let result = calendar.dateComponents([.hour], from: updateTime, to: self)
-        guard let resultHour = result.hour else {
-            return false
+        
+        if let resultHour = result.hour {
+            if resultHour <= 0 {
+                return false
+            }
+            hour = resultHour
         }
-        hour = resultHour
+        
         return true
     }
     

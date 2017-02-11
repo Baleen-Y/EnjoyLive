@@ -80,10 +80,13 @@ extension ELLiveListCell {
         let planTime = listItem.planTs.date()
         // 更新时间(即当前时间)
         let updateTime = Date()
-        // 结束时间
-        let endTime = listItem.endTs.date()
-        // 开始时间
-        let beginTime = listItem.beginTs.date()
+        
+        let begin = listItem.beginTs.date()
+        let end = listItem.endTs.date()
+        // 开始时间开始播放之后才会更新们这里也做一个判断
+        let beginTime = ((end == begin) || begin.isEnd(end)) ? planTime : begin
+        // 结束时间是播放完毕之后再更新的所以这里做一个判断，更新之前和开始时间是相等的
+        let endTime = ((end == begin) || begin.isEnd(end)) ? planTime.addingTimeInterval(7200) : end
         
         statusLabel.isHidden = true
         statusImageView.isHidden = false
@@ -91,7 +94,7 @@ extension ELLiveListCell {
         
         if updateTime.isLiving(beginTime, endTime) { // 正在直播
             statusImageView.image = #imageLiteral(resourceName: "living")
-        }else if updateTime.isEnd(planTime) { // 直播结束(由于还未直播的 endTime 和 beginTime 是给定的过去式，如果未在第一步，而这里返回是 true 则直播处于结束状态，和上面的顺序不能颠倒，因为这里才用的是'计划时间')
+        }else if updateTime.isEnd(endTime) { // 直播结束
             statusImageView.image = #imageLiteral(resourceName: "rebroadcast")
         }else { // 直播还未开始
             statusImageView.isHidden = true

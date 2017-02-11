@@ -33,9 +33,9 @@ class ELNavigationVC: UINavigationController {
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-        // 跳转之前设置左侧的返回按钮
+        /// 跳转之前设置左侧的返回按钮
         if childViewControllers.count > 0 {
-            // 设置返回按钮
+            /// 设置返回按钮
             viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.backItem(topViewController?.title, badgeValue: tabBarItem.badgeValue, self, action: #selector(back))
         }
         super.pushViewController(viewController, animated: animated)
@@ -49,7 +49,7 @@ class ELNavigationVC: UINavigationController {
 extension ELNavigationVC {
     
     fileprivate static func setupNavigationBar() {
-        // 修改 navigationBar 样式
+        /// 修改 navigationBar 样式
         var navigationBar: UINavigationBar
         if #available(iOS 9.0, *) {
             navigationBar = UINavigationBar.appearance(whenContainedInInstancesOf: [UINavigationController.self])
